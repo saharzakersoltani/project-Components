@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Table</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "inter", sans-serif;
+      color: #343a40;
+    }
+
+    .table-container {
+      width: 800px;
+      margin: 100px auto;
+    }
+
+    .table {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    h3 {
+      text-transform: capitalize;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 16px;
+    }
+
+    .green {
+      background-color: #087f5b;
+      color: #fff;
+    }
+
+    p {
+      padding: 16px;
+      font-size: 18px;
+    }
+
+    .light-gray {
+      background-color: #f8f9fa;
+    }
+
+    .mid-gray {
+      background-color: #e9ecef;
+    }
+  </style>
+  <body>
+    <div class="table-container">
+      <div class="table">
+        <h3 class="green">chair</h3>
+        <h3 class="green">the laid back</h3>
+        <h3 class="green">the worker bee</h3>
+        <h3 class="green">the chair 4/2</h3>
+
+        <h3 class="light-gray">width</h3>
+        <p class="light-gray">80 cm</p>
+        <p class="light-gray">60 cm</p>
+        <p class="light-gray">220 cm</p>
+
+        <h3 class="mid-gray">height</h3>
+        <p class="mid-gray">100 cm</p>
+        <p class="mid-gray">110 cm</p>
+        <p class="mid-gray">90 cm</p>
+
+        <h3 class="light-gray">depth</h3>
+        <p class="light-gray">70 cm</p>
+        <p class="light-gray">65 cm</p>
+        <p class="light-gray">80 cm</p>
+
+        <h3 class="mid-gray">weight</h3>
+        <p class="mid-gray">16 kg</p>
+        <p class="mid-gray">22 kg</p>
+        <p class="mid-gray">80 kg</p>
+      </div>
+    </div>
+  </body>
+</html>

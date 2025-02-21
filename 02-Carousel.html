@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "inter", sans-serif;
+    }
+
+    .carousel {
+      width: 800px;
+      margin: 100px auto;
+      background-color: #087f5b;
+      border-radius: 8px;
+      padding: 32px 12px 32px 86px;
+
+      display: flex;
+      /* align-items: center; */
+      gap: 32px;
+
+      position: relative;
+    }
+
+    img {
+      height: 200px;
+      border-radius: 8px;
+      transform: scale(1.5);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .testemonial {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+
+      padding-left: 48px;
+    }
+
+    .testemonial-text {
+      color: #e6fcf5;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.5;
+      margin-bottom: 32px;
+    }
+
+    .testemonial-author {
+      color: #c3fae8;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .testemonial-jub {
+      color: #c3fae8;
+      font-size: 12px;
+    }
+
+    .btn {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+    }
+
+    .btn--right {
+      /* right: 0;
+      transform: translate(20px, 80px); */
+      top: 50%;
+      right: -40px;
+      transform: translate(-50%, -50%);
+    }
+
+    .btn--left {
+      /* left: 0;
+      transform: translate(-20px, 80px); */
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    .btn-icon {
+      stroke: #087f5b;
+      width: 24px;
+      height: 24px;
+    }
+
+    .dot-btn {
+      position: absolute;
+      left: 50%;
+      bottom: -10%;
+      transform: translate(-50%, 0);
+
+      display: flex;
+      gap: 12px;
+      flex-direction: row;
+      padding-top: 50px;
+    }
+
+    .bottom-btn {
+      background-color: #fff;
+      border: 2px solid #087f5b;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .Open-bottom-btn {
+      background-color: #087f5b;
+    }
+
+    .bottom-btn:hover {
+      cursor: pointer;
+    }
+  </style>
+
+  <body>
+    <div class="carousel">
+      <div>
+        <img src="maria.jpg" alt="Maria de Almeida" />
+      </div>
+
+      <div class="testemonial">
+        <blockqoute>
+          <p class="testemonial-text">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            eveniet, iusto dolorem minus est odit animi, impedit quaerat ut
+            omnis sed, vero quod."
+          </p>
+          <p class="testemonial-author">Maria de Almeida</p>
+          <p class="testemonial-jub">Senior Product Manager at EDP Comercial</p>
+        </blockqoute>
+      </div>
+
+      <div>
+        <button class="btn btn--right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="btn-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
+      </div>
+      <div>
+        <button class="btn btn--left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="btn-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="dot-btn">
+        <button class="bottom-btn Open-bottom-btn"></button>
+        <button class="bottom-btn"></button>
+        <button class="bottom-btn"></button>
+        <button class="bottom-btn"></button>
+      </div>
+    </div>
+  </body>
+</html>
